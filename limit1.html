@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>limit</title>
+
+        <style>
+            
+            main{
+                width: 1080px;
+                height: 1920px;
+                background-color:white;
+                margin: 0 auto;
+                margin-top: 5em;
+            }
+
+            .top{
+                width: 1080px;
+                height: 150px;
+                background-color: #006298;
+            }
+
+            .title{
+                font-size: 75px;
+                text-align: left;
+                font-family:;
+                color: white;
+                position: relative;
+                left: 180px;
+                top: -120px;
+            }
+            .menu {
+                width:150px;
+                top: 60px;
+                left: 100px;
+      
+
+            }
+            .search {
+                width: 90px;
+                top: -198px;
+                left: 925px;
+                position: relative;
+            }
+            .checkbox {
+                position: relative;
+                width: 1150px;
+            }
+            /* The container */
+            .container {
+            display: block;
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            font-size: 75px;
+            line-height: 150%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+
+            /* Hide the browser's default radio button */
+            .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            }
+
+            /* Create a custom radio button */
+            .checkmark {
+            position: absolute;
+            top: 55;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .container:hover input ~ .checkmark {
+            background-color: #ccc;
+            }
+
+            /* When the radio button is checked, add a blue background */
+            .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+            }
+
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+            }
+
+            /* Show the indicator (dot/circle) when checked */
+            .container input:checked ~ .checkmark:after {
+            display: block;
+            }
+
+            /* Style the indicator (dot/circle) */
+            .container .checkmark:after {
+                top: 9px;
+                left: 9px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: white;
+            }
+            .labels {
+                position: relative;
+                top:50px;
+                left:30px;
+                
+            }
+          
+        </style>
+    </head>
+    
+        
+    <body> 
+        <main>
+            <div class="top">
+                <img class= "menu" src="menu.png">
+                <div class="title">나의 돼지들</div>
+                <img class="search" src="search.png">
+                
+            </div>
+            
+            <div class="labels">
+
+                <label class="container">담배
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">술
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">쇼핑
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">커피
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">택시
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+
+       
+        </main>
+        
+    </body>
+         
+    
+    
+</html>

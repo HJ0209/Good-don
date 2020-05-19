@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <title>limit</title>
+
+        <style>
+            main{
+                width: 1080px;
+                height: 1920px;
+                background-color:white;
+                margin: 0 auto;
+                margin-top: 5em;
+            }
+
+            .top{
+                width: 1080px;
+                height: 150px;
+                background-color: #006298;
+            }
+
+            .title{
+                font-size: 75px;
+                text-align: left;
+                color: white;
+                position: relative;
+                left: 180px;
+                top: -120px;
+            }
+            .menu {
+                width:150px;
+                top: 60px;
+                left: 100px;
+      
+
+            }
+            .search {
+                width: 90px;
+                top: -198px;
+                left: 925px;
+                position: relative;
+            }
+            label{
+                font-size: 50px;
+                position: relative;
+                top: 30px;
+                left: 30px;
+            }
+            #category {
+                font-size: 50px;
+                position: relative;
+                top: 35px;
+                left: 80px;
+                height: 70px;
+                width: 300px;
+                border: 0ch;
+                border-bottom: 2px solid #006298;
+                outline: 0ch;
+                
+
+
+            }
+            
+            .wordexample {
+                position: relative;
+                left: 30px;
+                top: 120px;
+            }
+            .pig {
+                position: relative;
+                top: 150px;
+                left: 30px;
+
+
+            }
+            .word {
+                position: relative;
+                top: 50px;
+ 
+                left: 190px;
+                font-size: 45px;
+                font:100px;
+            }
+            #bud {
+                position: relative;
+                border: 0ch;
+                border-bottom: 2px solid #006298;
+                width: 1000px;
+                height: 100px;
+                top: 190px;
+                left: 30px;
+            }
+            .buttons {
+                width: 160px;
+                height: 80;
+                position: relative;
+                top: 220px;
+                left: 380px;
+                font-size: 45px;
+                background-color: #006298;
+                color:white;
+                border-radius: 25px;
+            }
+            .termbuttons {
+                width: 160px;
+                height: 80;
+                position: relative;
+                top: 50px;
+                left: 340px;
+                font-size: 45px;
+                background-color: #006298;
+                color:white;
+                border-radius: 25px;
+            }
+            .term{
+                position: relative;
+                top: 300px;
+                left: 40px;
+           }
+            #date-term{
+                position: relative;                
+                width: 1000px;
+                height: 100px; 
+                top: 30px;      
+                border: 0ch;
+                border-bottom: 2px solid #006298;
+              
+           }
+
+           .alert {
+               position: relative;
+               top: 600px;
+               left:30px;
+               font-size: 45px;
+           }
+           #myRange{
+               position:relative;
+               width: 1000px;
+               height: 40px;
+               top:150px;
+           }
+
+           .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 25px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+           }
+
+           .slider:hover {
+                opacity: 1;
+            }
+
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 40px;
+                height: 40px;
+                background: #006298;
+                cursor: pointer;
+            }
+
+            .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #006298;
+                cursor: pointer;
+            }
+
+
+        
+
+        </style>
+        <script>
+            window.onload = function(){
+
+                let scrollNum = document.getElementById("num")
+
+                let scrollBar = document.getElementById("myRange")
+
+                scrollBar.onchange = function(e){
+                    scrollNum.innerText = this.value
+                }
+
+                let bud = document.getElementById("bud")
+
+                let buttons = document.getElementsByClassName("buttons")
+
+                for(let button of buttons){
+                    button.onclick = function(e){
+                        let price = this.value
+                        price = price.substring(0, price.length-2)
+                        bud.value = price
+                        scrollBar.setAttribute("max", price)
+                    }
+                }
+
+                bud.onchange = function(e){
+                    console.log("Change")
+                    scrollBar.setAttribute("max", this.value)
+                }
+                let dateInput = document.getElementById("date-term")
+
+                let monthBtn = document.getElementsByClassName("termbuttons")
+
+                for(let btn of monthBtn){
+                    btn.onclick = function(e){
+                        dateInput.value = this.value
+                    }
+                }
+                
+                
+
+            }
+        </script>
+    </head>
+    
+        
+    <body> 
+        <main>
+            <div class="top">
+                <img class= "menu" src="menu.png">
+                <div class="title">먹이주기</div>
+                <img class="search" src="search.png">
+            </div>
+
+            <label for="category">카테고리 :</label>
+            <select id="category">
+                <option value="담배">담배</option>
+                <option value="술">술</option>
+                <option value="쇼핑">쇼핑</option>
+                <option value="커피">커피</option>
+                <option value="택시">택시</option>
+            </select>
+
+            <div class="example">
+                <div class="wordexample">오늘의 절약 한마디 예시</div>
+                <img class="pig" src="pig.png">
+                <div class="word"><strong>"술을 이렇게 마시면 골로갑니다. 꿀꿀"</strong></div>
+
+            </div>
+
+            <div class="budget">
+                <input type="number" id="bud" placeholder="예산을 입력해주세요" style="font-size:70px;">
+                <br>
+                <div>
+                    <input class="buttons" type="button" value="5만원" >
+                    <input class="buttons" type="button" value="10만원">
+                    <input class="buttons" type="button" value="15만원">
+                    <input class="buttons" type="button" value="20만원">
+                </div>               
+            </div>
+
+            <div class="term">
+                <input type="text" id="date-term" 
+                placeholder="기간을 입력해 주세요" style="font-size:70px;" min="2020-02-01" max="2020-12-31">
+                <br>
+                <div>
+                    <input class="termbuttons" type="button" value="1개월" >
+                    <input class="termbuttons" type="button" value="2개월" >
+                    <input class="termbuttons" type="button" value="3개월" >
+                    <input class="termbuttons" type="button" value="4개월" >
+                </div>               
+            </div>
+
+            <div class="alert">
+                <strong>알림 시작 금액</strong>
+                <div class="slidercontainer">
+                    <input type="range" min="0" max="100" value="0" class=slider id="myRange">
+                </div> 
+                <br>
+                <br>
+                <p><b id="num">0</b>만원부터 지출시 알림이 가도록 설정합니다. </p>
+            
+            </div>
+            
+
+            
+            
+        </main>
+        
+    </body>
+         
+    
+    
+</html>

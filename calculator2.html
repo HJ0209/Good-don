@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> calculator </title>
+
+        <style>
+            main{
+                width: 1080px;
+                height: 1920px;
+                background-color:rgb(238, 235, 235);
+                margin: 0 auto;
+                margin-top: 5em;
+            }
+            .top{
+                width: 1080px;
+                height: 150px;
+                background-color: #006298;
+            }
+            .pig{
+                font-size: 75px;
+                text-align: left;
+                font-family:;
+                color: white;
+                position: relative;
+                left: 180px;
+                top: -115px;
+            }
+            
+            h6{
+                font-size: 75px;
+                
+                margin-left: 4.8em;
+                color: rgb(105, 104, 104);
+                
+            }
+            .menu {
+                width:150px;
+                top: 40px;
+                left: 100px;
+                
+
+            }
+            .search {
+                width: 90px;
+                top: -210px;
+                left: 920px;
+                position: relative;
+            }
+            
+
+
+            .calButton {
+                color: #C0CCDA;
+                width: 50px;
+                height: 50px;
+                top: 30px;
+                left: 250px;
+                position: relative;
+            }
+
+            #box0 {
+                background-color : transparent;
+                outline: dotted;
+                width: 950px;
+                height: 200px;
+                top: 100px;
+                right: 300px;
+                position: relative;
+                font-size: 75px;
+                margin-left: 4.8em;
+                color: #006298;
+                margin-top: 3px;
+                margin-bottom: 100px;
+
+            }
+            #box1 {
+                background-color : #006298;
+                width: 270px;
+                height: 90px;
+                top: 50px;
+                right: 230px;
+                position: relative;
+                padding: 10px;
+                font-size: 50px;
+                margin-left: 4.8em;
+                color: white;
+                text-align: center;
+                border-radius: 25px;
+            }
+          
+            
+            #box2 {
+            width: 450;
+            height: 110;
+            /* border: 0.5px solid black; */
+            font-size: 60;
+            
+            position: absolute;
+            right: 125px;
+            top: 50px;
+            border-radius: 25px;
+        }
+            #box3 {
+            background-color :white;
+            width: 100;
+            height: 80;
+            /* border: 0.5px solid black; */
+            font-size: 50;
+            color: black;
+            position: absolute;
+            left: 720px;
+            top: 60px;
+            text-align: right;
+        }
+        #box4 {
+            background-color :white;
+            width: 100;
+            height: 100;
+            /* border: 0.5px solid black; */
+            font-size: 50;
+            color: black;
+            position: absolute;
+            left: 720px;
+            top: 50px;
+            text-align: right;
+            border-radius: 25px;
+            margin-top: 0.1em;
+            margin-bottom: 100em;
+            border: black;
+            
+        }
+            /* label{
+                font-size: 50px;
+                position: relative;
+                top: 30px;
+                left: 50px;
+            } */
+
+            #category {
+                width: 350px;
+                height: 110px;
+                top: 600px;
+                left: 400px;
+                font-size: 45px;
+                margin-left: 8.2em;
+                margin-top: -1.3em;
+                text-align: center;
+                border-radius: 25px;
+            }
+            
+            /* .calb {
+                width: 300px;
+                height: 90px;
+                top: 50px;
+                left: 230px;
+                position: relative;
+                padding: 10px;
+                font-size: 55px;
+                margin-left: -1.8em;
+                color: white;
+                text-align: center;
+            } */
+
+            .calbutton {
+                width: 230px;
+                height: 180;
+                position: relative;
+                top: 100px;
+                left: 50px;
+                font-size: 45px;
+                color: white;
+                background-color : #C0CCDA;
+                border-radius: 25px;
+                padding: 10px;
+
+            }
+
+            .calbutton1 {
+                width: 230px;
+                height: 180;
+                position: relative;
+                top: 100px;
+                left: 50px;
+                font-size: 45px;
+                color: white;
+                background-color : #969FAA;
+                border-radius: 25px;
+                padding: 10px;
+            }
+
+
+            .calbutton2 {
+                width: 230px;
+                height: 180;
+                position: relative;
+                top: 100px;
+                left: 50px;
+                font-size: 45px;
+                color: white;
+                background-color : #006298;
+                border-radius: 25px;
+                padding: 10px;
+            }
+
+
+        </style>
+    </head>
+    
+        
+    <body> 
+        <main>
+            <div class="top">
+                <img class= "menu" src="menu.png">
+
+                <div class="pig"> 적금 만기액 계산 </div>
+
+                <img class="search" src="search.png">
+           
+                
+            </div>
+
+
+            <div id="box0">
+                <div id="box1"> 
+                    월적금액
+                </div>
+                <input id="box2" type="text">
+                <div id="box3"> 
+                       원
+                </div>
+            </div>
+
+
+
+            <div id="box0">
+                <div id="box1"> 
+                    목표기간
+                </div>
+                <input id="box2" type="text">
+                <div id="box3"> 
+                      개월
+                </div>
+            </div>
+
+            <div id="box0">
+                <div id="box1"> 
+                    이자율 (연)
+                </div>
+                <div>
+                <select id="category">
+                    <option value="이자율 선택"> ▼ 이자율 선택</option>
+                    <option value="단리">단리</option>
+                    <option value="연복리">연복리</option>
+                    <option value="월복리">월복리</option>
+                </select>
+                </div>
+                <div id="box4"> 
+                    %                   
+                </div>
+            </div>
+
+                      
+                <div>
+                    <input class="calbutton" type="button" value="1" >
+                    <input class="calbutton" type="button" value="2">
+                    <input class="calbutton" type="button" value="3">
+                    <input class="calbutton1" type="button" value="◀">
+                </div>
+
+                <div>
+                    <input class="calbutton" type="button" value="4" >
+                    <input class="calbutton" type="button" value="5">
+                    <input class="calbutton" type="button" value="6">
+                    <input class="calbutton1" type="button" value="ㆍ">
+                </div>
+         
+                <div>
+                    <input class="calbutton" type="button" value="7" >
+                    <input class="calbutton" type="button" value="8">
+                    <input class="calbutton" type="button" value="9">
+                    <input class="calbutton1" type="button" value="C">
+                </div>
+         
+                <div>
+                    <input class="calbutton1" type="button" value="CA" >
+                    <input class="calbutton1" type="button" value="0">
+                    <input class="calbutton1" type="button" value="000">
+                    <input class="calbutton2" type="button" value="OK">
+                </div>
+         
+        </main>
+        
+    </body>
+         
+    
+    
+</html>
