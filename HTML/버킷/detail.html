@@ -20,6 +20,20 @@
                 text-align: center;
                 color: white;
             }
+            .menu {
+                width:110px;
+                height: 110;
+                top: -320px;
+                left: 50px;
+                position: relative;
+            }
+            .search {
+                width: 80px;
+                height:auto;
+                top: -480px;
+                left: 980px;
+                position: relative;
+            }
             h1{
                 font-size: 50;
                 color: #006298;
@@ -91,6 +105,12 @@
         <main>
         <header>
             <h2>상품 정보</h2>
+            <a href = "../인덱스&로그인&메뉴/menu.html">
+                <input type="image" class="menu" src="../image/menu.png">
+            </a>
+            <form action = "search.html" method="get">
+                <input type="image" class="search" name="search" src="../image/search.png">
+            </form>
         </header>
         <div class="PigName">
             <h1>상품 이름</h1>
