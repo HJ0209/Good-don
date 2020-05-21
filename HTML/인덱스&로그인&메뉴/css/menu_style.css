@@ -1,0 +1,78 @@
+
+        main{
+            width: 1080px;
+            height: 1920px;
+            background-color:rgb(238, 235, 235);
+            margin: 0 auto;
+            margin-top: 5em;
+            border: 1px solid black;
+        }
+        h2{
+            width: 1080px;
+            height: 120px;
+            margin-top: 0em;
+            background-color: #006298;
+            font-size: 70px;
+            text-align: center;
+            color: white;
+        }
+        #menu{
+            width: 130px;
+            height: 80px;
+            position: relative;
+            bottom: 160px;
+        }
+        #menu_bar{
+            background-color: #006298;
+            width: 840px;
+            height: 500px;
+            position: relative;
+            bottom: 300px;
+        }
+        h3{
+            color: white;
+            font-size: 2.5rem;;
+            padding: 3rem;
+            position: relative;
+            top: 100px;
+            left: 180px;
+        }
+        h4{
+            font-size: 30px;
+            position: relative;
+            top: 100px;
+            left: 180px;
+            color: white;
+        }
+        h5{
+            font-size: 30px;
+            position: relative;;
+            top: 115px;
+            left: 150px;
+            color: white;
+        }
+        #icon{
+            width: 180px;
+            height: 180px;
+            position: relative;
+            bottom: 800px;
+            margin-left: 650px;
+            bottom: 250px;
+        }
+
+        hr{
+            border: 3px solid rgb(85, 85, 85);
+            width: 90%;
+            margin-left: 1rem;
+            position: relative;
+            top: 30px;
+        }
+
+        #logout{
+            width: 250px;
+            height: 700px;
+            color: rgb(201, 199, 199);
+            text-align: center;
+            margin-left: 600px;
+            bottom: 100px;
+        }

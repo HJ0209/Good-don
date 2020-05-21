@@ -1,0 +1,21 @@
+
+        main{
+            width: 1080px;
+            height: 1920px;
+            background-color: rgb(237, 246, 248);
+            margin: 0 auto;
+            margin-top: 5em;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 40em;
+            margin-left: 21.5em;
+        }
+        h6{
+            font-size: 75px;
+            margin-left: 4.8em;
+            color: rgb(105, 104, 104);
+            font-family:'Courier New', Courier, monospace;
+        }

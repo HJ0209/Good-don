@@ -1,0 +1,23 @@
+main{
+    width: 1080px;
+    height: 1920px;
+    background-color: rgb(238, 251, 255);
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+h2{
+    width: 1080px;
+    height: 1920px;
+    margin-top: -1em;
+    background-color: #006298;
+}
+
+p{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    font-display: block;
+    display:block;
+    padding:10px;
+}  
