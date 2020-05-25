@@ -14,17 +14,17 @@
         <header>
             <h2>상품 정보</h2>
             <a href = "../login&menu/menu.html">
-                <img src="image/menu.png">
+                <img class = "menu" src="image/menu.png">
             </a>
-            <form action = "search.html" method="get">
+            <!-- <a href = "search.html">
                 <img src="image/search.png">
-            </form>
+            </a> -->
         </header>
-        <div class="PigName">
+        <div class="Product_Name">
             <h1>상품 이름</h1>
             <input class="name" type="text" value="" placeholder="상품 이름을 입력해주세요!(ex.에어팟, 배낭여행)">
         </div>
-        <div class="PigSize" >
+        <div class="Product_Budget" >
             <h1>목표 금액</h1>
             <select id="money" name="moneys">
                 <option value="">목표 금액을 선택해주세요!</option>
@@ -37,7 +37,7 @@
 
             </select>
         </div>
-        <div class="PigLife" >
+        <div class="Saving_Period" >
             <h1>저금 기간</h1>
             <select id="period" name="periods" placeholder="저금 기간을 선택해주세요!">
                 <option value="">저금 기간을 선택해주세요!</option>
@@ -48,7 +48,7 @@
                 <option value="다섯달">5개월</option>
             </select>
         </div>
-        <div class="PigEat" >
+        <div class="Payment_Cycle" >
             <h1>납입 주기</h1>
             <select id="cycle" name="cycles">
                 <option value="">납입 주기를 선택해 주세요!</option>
@@ -58,13 +58,13 @@
                 <option value="4주일">4주에 한번</option>
             </select>
         </div>
-        <div id="PigCultivate">
+        <div>
             <!--
             <a href="Congratulations.html">
                 <button id="PigButton"> 생 성 </button>
             </a>
             -->
-            <button id="PigButton"> 생 성 </button>
+            <button id="Button_NewList"> 생 성 </button>
         </div>
         </main>
 
@@ -77,7 +77,7 @@
                 });
 
                 
-                $('#PigButton').click(function() {
+                $('#Button_NewList').click(function() {
                     console.log($('#period').val());
                     if ($('#period').val() == "") {
                         alert("입력하세요");
