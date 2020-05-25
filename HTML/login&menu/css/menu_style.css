@@ -1,92 +1,68 @@
-main{
-    width: 1080px;
-    height: 1920px;
-    background-color:rgb(238, 235, 235);
-    margin: 0 auto;
-    margin-top: 5em;
-    border: 1px solid black;
+
+header{
+    background-color:#00498C;
+    width: 900px;
+    height: 400px;
 }
+
 h2{
-    width: 1080px;
-    height: 120px;
-    margin-top: 0em;
-    background-color: #006298;
-    font-size: 70px;
-    text-align: center;
-    color: white;
-}
-#menu{
-    width: 130px;
-    height: 80px;
-    position: relative;
-    bottom: 160px;
-}
-#menu_bar{
-    background-color: #006298;
-    width: 840px;
-    height: 500px;
-    position: relative;
-    bottom: 300px;
-}
-h3{
-    color: white;
-    font-size: 2.5rem;;
-    padding: 3rem;
-    position: relative;
-    top: 100px;
-    left: 180px;
-}
-h4{
-    font-size: 30px;
-    position: relative;
-    top: 100px;
-    left: 180px;
-    color: white;
-}
-h5{
-    font-size: 30px;
-    position: relative;;
-    top: 115px;
-    left: 150px;
-    color: white;
-}
-#icon{
-    width: 180px;
-    height: 180px;
-    position: relative;
-    bottom: 800px;
-    margin-left: 650px;
-    bottom: 250px;
-}
-#logout{
-    width: 200px;
-    height: 50px;
-    color: rgb(201, 199, 199);
-    text-align: center;
-    margin-top: -60px;
-    margin-left: 600px;
-    position: relative;
-    bottom: 100px;
-}
-#head2{
-    width: 840px;
-    height: 1440px;
-    position: relative;
-    bottom: 370px;
-    background-color: #006298;
-    margin-top: 50px;
-}
-#head2 button{
-    font-size: 70;
-    color: white;
-    background-color: #006298;
-    border: 0;
-    outline: 0;
     text-align: left;
-    position: relative;
-    bottom: 0;
-    top: 30px;
+    margin-left:50px;
+    color: #ffffff;
+    font-size : 70px;
+    padding-top : 60px;
 }
+
+h3{
+    text-align: left;
+    margin-left:50px;
+    color: #ffffff;
+    font-size : 30px;
+    margin-top : 40px;
+
+}
+
+img{
+    margin-top:15px;
+    margin-left:20px;
+    width:150px;
+    height:auto;
+
+}
+
+#menu{
+    width:900px;
+    height:1000px;
+    background-color:#006298;
+    margin-top:-50px;
+}
+
+ul{
+    padding-top:40px;
+    font-size: 50px;
+    font-weight: bold;
+    color:#FFFfFF;
+}
+li{
+    list-style:none;
+    padding-left:20px;
+    font-size : 40px;
+    padding-top: 30px;
+    font-weight: lighter;
+    color:#CCCCCC;
+}
+
+button{
+    width: 230px;
+    height: 60px;
+    margin-top: 70px;
+    margin-left: 70%;
+    color: #888888;
+    font-size : 40px;
+    text-align: center;
+    position: relative;
+}
+
 hr{
     border: 3px solid rgb(85, 85, 85);
     width: 90%;

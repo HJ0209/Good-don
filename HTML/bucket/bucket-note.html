@@ -3,7 +3,8 @@
     <head>
         <title>BUCKET-NOTE</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/bucket-note_style.css"> 
+        <link rel="stylesheet" href="css/bucket-note_style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
     </head>
 
     <body>
@@ -26,4 +27,14 @@
         </div>    
     </main>
     </body>
+
+    <script type="text/javascript">
+        function clickHandler(e){
+            alert('thank you');
+        }
+        $(document).bind('ready', function(){
+                 $('#limit').bind('click', clickHandler);
+        }
+    </script>
+
 </html>

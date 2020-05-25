@@ -3,33 +3,40 @@
         <meta charset="utf-8">
         <title>Menu</title>
         <link rel="stylesheet" href="css/menu_style.css"> 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
     </head>  
 
-    <body> 
-        <main>
-            <header>
-                <h2>내안의 자산관리, 굳돈</h2>
-                <img id="menu" src="image/open_logo.png">
-            </header>
 
-            <div id="menu_bar">
-            <header>
-                <h3>굳돈 카테고리</h3>
-                <h4>굳돈 님, 안녕하세요</h4>
-                <h5>최근 접속 일시: 2020.05.21</h5>
-                <img id="icon" src="image/open_logo.png">
-                <button id="logout">로그아웃</button>
-            </header>
-             </div id="menu_bar">
+    <body>
 
-        <div id="head2">
-                <hr>
-                <a href="../bucket/bucket-note.html"></a>
-                    <button onClick>굳돈 버킷</button>
-                </a>
-                <hr>
+        <header>
+            <h2>굳돈 카테고리 <img src="image/face_logo.png"> </h2>
+            <h3> 굳돈님, 안녕하세요 <br>
+            최근접속일시 : 2020년 6월 20일 09:00:00</h3>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <a href=../bucket/bucket-note.html>굳돈버킷</a>
+                <li> 버킷조회 </li>
+                <li> 버킷생성 </li>
+                <li> 버킷수정 </li>
+            </ul>
+            <ul id="limit">
+                리미트소비
+            </ul>
+            <ul>
+                마이페이지
+            </ul>
+            <hr>
+
+            <li>About GoodDon</li>
+
+            <button>  로그아웃  </button>
         </div>
-        </main>
-        
+
+
+        <script type="text/javascript" src="../../JS/menu.js"></script>
+    
     </body>
 </html>
