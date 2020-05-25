@@ -16,9 +16,6 @@
             <a href = "../login&menu/menu.html">
                 <img class = "menu" src="image/menu.png">
             </a>
-            <!-- <a href = "search.html">
-                <img src="image/search.png">
-            </a> -->
         </header>
         <div class="Product_Name">
             <h1>상품 이름</h1>
@@ -26,7 +23,7 @@
         </div>
         <div class="Product_Budget" >
             <h1>목표 금액</h1>
-            <select id="money" name="moneys">
+            <select id="money" name="money">
                 <option value="">목표 금액을 선택해주세요!</option>
                 <option value="만원">10,000</option>
                 <option value="이만원">20,000</option>
@@ -39,18 +36,20 @@
         </div>
         <div class="Saving_Period" >
             <h1>저금 기간</h1>
-            <select id="period" name="periods" placeholder="저금 기간을 선택해주세요!">
+
+            <select id="period" name="period" placeholder="저금 기간을 선택해주세요!">
                 <option value="">저금 기간을 선택해주세요!</option>
                 <option value="한달">1개월</option>
                 <option value="두달">2개월</option>
                 <option value="세달">3개월</option>
                 <option value="네달">4개월</option>
-                <option value="다섯달">5개월</option>
+                <option value="direct">직접입력</option>
             </select>
+            <input type="text" id="Period_Direct" name="Period_Direct"/>
         </div>
         <div class="Payment_Cycle" >
             <h1>납입 주기</h1>
-            <select id="cycle" name="cycles">
+            <select id="cycle" name="cycle">
                 <option value="">납입 주기를 선택해 주세요!</option>
                 <option value="1주일">1주에 한번</option>
                 <option value="2주일">2주에 한번</option>
@@ -68,8 +67,10 @@
         </div>
         </main>
 
+        <script type="text/javascript" src="../../JS/detail.js"></script>
+
         
-        <script>
+        <!-- <script>
 
             $(function () {
                 $('#period').change(function() {
@@ -88,5 +89,6 @@
                 });
             });
 
-        </script>
+        </script> -->
     </body>
+</html>
