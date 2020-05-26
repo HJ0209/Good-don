@@ -22,45 +22,27 @@ h2{
     left: 50px;
     position: relative;
 }
-.search {
-    width: 80px;
-    height:auto;
-    top: -480px;
-    left: 980px;
-    position: relative;
-}
+
 h1{
     font-size: 50;
     color: #006298;
     margin-left: 40px;
 }
-input{
+.Product_Name input{
+    position: relative;
     width: 1000px;
     height: 100px;
-    position: relative;
     left: 40px;
-    margin-bottom: -100px;
+    margin-bottom: -120px;
     font-size: 40;
-    margin-top: 150px;
-    position: relative;
-    top: -180px;
+    margin-top: 100px;
+    top: -100px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-#Button_NewList{
-    color: white;
-    background-color: #006298;
-    font-size: 50;
-    border-top-left-radius : 100px;
-    border-bottom-left-radius : 100px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    padding: 40px;
-    margin-left: 450px;
-    margin-top: 200px;
-}
+
 #money{
     width: 1000px;
     height: 100px;
@@ -81,6 +63,20 @@ input{
     border-bottom-right-radius: 25px;
     font-size: 40;
 }
+.Saving_Period input {
+    width: 1000px;
+    height: 100px;
+    left: 40px;
+    margin-bottom: -100px;
+    font-size: 40;
+    margin-top: 180px;
+    position: relative;
+    top: -180px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 #cycle{
     width: 1000px;
     height: 100px;
@@ -90,4 +86,18 @@ input{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     font-size: 40;
+}
+
+#Button_NewList{
+    position: fixed ;
+    color: white;
+    background-color: #006298;
+    font-size: 50;
+    border-top-left-radius : 100px;
+    border-bottom-left-radius : 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 40px;
+    margin-left: 450px;
+    margin-top: 400px;
 }
