@@ -1,5 +1,11 @@
+#menuclick{
+    position:fixed;
+    top : 70px;
+    left: 8px;
+    display: none;
 
-header{
+}
+#member{
     background-color:#00498C;
     width: 900px;
     height: 400px;
@@ -22,7 +28,7 @@ h3{
 
 }
 
-img{
+#facelogo{
     margin-top:15px;
     margin-left:20px;
     width:150px;
@@ -32,8 +38,8 @@ img{
 
 #menupage{
     width:900px;
-    height:1000px;
-    background-color:#006298;
+    height:1400px;
+    background-color:#41719A;
     margin-top:-50px;
 }
 
@@ -45,6 +51,7 @@ ul{
 }
 li{
     list-style:none;
+    margin-left:20px;
     padding-left:20px;
     font-size : 40px;
     padding-top: 30px;
@@ -55,7 +62,7 @@ li{
 button{
     width: 230px;
     height: 60px;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 70%;
     color: #888888;
     font-size : 40px;
@@ -66,7 +73,12 @@ button{
 hr{
     border: 3px solid rgb(85, 85, 85);
     width: 90%;
-    margin-left: 1rem;
+    margin-left: 2rem;
     position: relative;
     top: 30px;
+}
+
+a {
+    text-decoration:none;
+    color : #FFFfFF;
 }
