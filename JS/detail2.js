@@ -1,40 +1,45 @@
-window.onload = function(){
+$(document).ready(() => {
+    $(".buttons").click(function(){
+        // 이게 해당 버튼들을 선택해서 클릭 이벤트를 지정해준 코드야
+       
+        let value = this.value.trim().substr(0, this.value.length - 2) * 1
+        $("#budget").val(value)
+    })
 
-    let scrollNum = document.getElementById("num")
+    $('.termbuttons').click(function(){
+        let value = this.value.trim().substr(0, this.value.length - 2) * 1
+        $("#date-term").val(value)
+    })
 
-    let scrollBar = document.getElementById("myRange")
 
-    scrollBar.onchange = function(e){
-        scrollNum.innerText = this.value
-    }
+    $('.cyclebuttons').click(function(){
+        let value = this.value.trim().substr(0, this.value.length - 3) * 1
+        $("#date-cycle").val(value)
+    })
 
-    let bud = document.getElementById("bud")
+    $("#Button_NewList").click(function(e){
+        if($("#budget").val().length !== 0){
 
-    let buttons = document.getElementsByClassName("buttons")
-
-    for(let button of buttons){
-        button.onclick = function(e){
-            let price = this.value
-            price = price.substring(0, price.length-2)
-            bud.value = price
-            scrollBar.setAttribute("max", price)
+        }else{
+            e.preventDefault()
+            alert("목표금액을 입력해주세요")
         }
-    }
+    })
+    $("#Button_NewList").click(function(e){
+        if($("#date-term").val().length !== 0){
 
-    bud.onchange = function(e){
-        console.log("Change")
-        scrollBar.setAttribute("max", this.value)
-    }
-    let dateInput = document.getElementById("date-term")
-
-    let monthBtn = document.getElementsByClassName("termbuttons")
-
-    for(let btn of monthBtn){
-        btn.onclick = function(e){
-            dateInput.value = this.value
+        }else{
+            e.preventDefault()
+            alert("기간을 입력해 주세요")
         }
-    }
-    
-    
+    })
+    $("#Button_NewList").click(function(e){
+        if($("#date-cycle").val().length !== 0){
 
-}
+        }else{
+            e.preventDefault()
+            alert("납입주기를 입력해 주세요")
+        }
+    })
+
+})

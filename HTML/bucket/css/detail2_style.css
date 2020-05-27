@@ -1,10 +1,11 @@
 main{
     width: 1080px;
-    height: 1920px;
+    /* height: 1920px; */
     background-color: rgb(238, 251, 255);
     border: 1px solid black;
     margin: 0 auto;
     margin-top: 5em;
+    position: relative;
 }
 
 header{
@@ -159,13 +160,12 @@ label{
     position: relative;
     top: 10px;
     left: 380px;
-    font-size: 45px;
+    font-size: 2rem;
     background-color: #006298;
     color:white;
     border-radius: 25px;
 }
 #Button_NewList{
-    position: fixed ;
     font-size: 50;
     color: white;
     background-color: #006298;
@@ -173,10 +173,22 @@ label{
     border-bottom-left-radius : 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    padding: 40px;
-    margin-left: 450px;
-    margin-top: 250px;
+    display:block;
+    margin:auto;
+    margin-top:120px;
+    margin-bottom:70px;
+    width: 50%;
+    height: 80px;
 }
+input.box {
+    padding:5px 20px;
+}
+/* 
+.test{
+    position: absolute;
+    bottom : 
+} */
+
 
 /* 
 

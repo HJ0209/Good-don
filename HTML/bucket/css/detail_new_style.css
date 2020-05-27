@@ -1,0 +1,265 @@
+main{
+    width: 1080px;
+    height: 1920px;
+    background-color: rgb(238, 251, 255);
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+header{
+    margin-bottom:-150px;
+}
+
+h2{
+    font-size: 70px;
+    width: 1080px;
+    height: 120px;
+    margin-top: 0em;
+    color: white;
+    background-color: #006298;
+    text-align: center;
+}
+
+.menu{
+    width:110px;
+    height: 110;
+    top: -175px;
+    left: 50px;
+    position: relative;
+}
+
+label{
+    position: relative;
+    font-size: 50px;
+    top: 30px;
+    left: 30px;
+    font-weight:bold;
+}
+
+#category {
+    position: relative;
+    font-size: 50px;
+    width: 300px;
+    height: 70px;
+    top: 35px;
+    left: 80px;
+    border: 0ch;
+    border-bottom: 2px solid #006298;
+    outline: 0ch;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.Product_Name h1{
+    padding-left:40px;
+    padding-top: 100px;
+
+}
+
+.Product_Name input{
+    position: relative;
+    font-size: 40;
+    width: 1000px;
+    height: 100px;
+    left: 40px;
+    margin-bottom: -120px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.budget h1{
+    padding-left:40px;
+    padding-top: 150px;
+}
+
+#budget {
+    position: relative;
+    font-size: 70px;
+    width: 1000px;
+    height: 100px;
+    left: 40px;
+    border: 0ch;
+    border-bottom: 2px solid #006298;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.budgetbuttons {
+    position: relative;
+    font-size: 45px;
+    width: 160px;
+    height: 80;
+    top: 10;
+    left: 380px;
+    color:white;
+    background-color: #006298;
+    border-radius: 25px;
+}
+.term h1 {
+    padding-left:40px;
+    padding-top: 40px;
+}
+
+#date-term{
+    position: relative;
+    font-size: 70px;                
+    width: 1000px;
+    height: 100px; 
+    left:40px;    
+    border: 0ch;
+    border-bottom: 2px solid #006298;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.termbuttons {
+    width: 160px;
+    height: 80;
+    position: relative;
+    top: 10px;
+    left: 380px;
+    font-size: 45px;
+    background-color: #006298;
+    color:white;
+    border-radius: 25px;
+}
+
+.cycle h1 {
+    padding-left:40px;
+    padding-top: 40px;
+}
+
+#date-cycle{
+    position: relative;
+    font-size: 70px;                
+    width: 1000px;
+    height: 100px; 
+    left:40px;    
+    border: 0ch;
+    border-bottom: 2px solid #006298;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.cyclebuttons {
+    width: 160px;
+    height: 80;
+    position: relative;
+    top: 10px;
+    left: 380px;
+    font-size: 45px;
+    background-color: #006298;
+    color:white;
+    border-radius: 25px;
+}
+
+#image-file{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;                
+    width: 1000px;
+    height: 100px; 
+    padding-left:40px;
+    padding-top:60px;
+
+}
+
+#Button_NewList{
+    position: absolute ;
+    z-index: 0;
+    font-size: 50;
+    color: white;
+    background-color: #006298;
+    border-top-left-radius : 100px;
+    border-bottom-left-radius : 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 40px;
+    margin-left: 450px;
+    margin-top: 250px;
+}
+
+
+/* 
+
+.wordexample {
+    position: relative;
+    left: 30px;
+    top: 120px;
+}
+.pig {
+    position: relative;
+    top: 150px;
+    left: 30px;
+
+
+}
+.word {
+    position: relative;
+    top: 50px;
+
+    left: 190px;
+    font-size: 45px;
+    font:100px;
+}
+
+.term{
+    position: relative;
+    top: 300px;
+    left: 40px;
+}
+
+.alert {
+   position: relative;
+   top: 600px;
+   left:30px;
+   font-size: 45px;
+}
+#myRange{
+   position:relative;
+   width: 1000px;
+   height: 40px;
+   top:150px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #006298;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #006298;
+    cursor: pointer;
+} */

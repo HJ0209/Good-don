@@ -1,8 +1,6 @@
 $(function() {
     $("#Period_Direct").hide();
 
-
-    var repeat;
     $("#period").change(function(){
         console.log("change");
         if($("#period").val() == "direct") {
