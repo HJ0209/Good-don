@@ -3,13 +3,11 @@
         <meta charset="utf-8">
         <title>Good-Don page</title>
         <link rel="stylesheet" href="css/detail_style.css"> 
-
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
     </head>
     
         
     <body>
-        <a href="bucket list.html"></a>
         <main>
         <header>
             <h2>상품 정보</h2>
@@ -45,7 +43,7 @@
                 <option value="네달">4개월</option>
                 <option value="direct">직접입력</option>
             </select>
-            <input type="text" id="Period_Direct" name="Period_Direct"/>
+            <input type="text" id="Period_Direct" name="Direct" placeholder="만원단위">
         </div>
         <div class="Payment_Cycle" >
             <h1>납입 주기</h1>
@@ -58,37 +56,11 @@
             </select>
         </div>
         <div>
-            <!--
-            <a href="Congratulations.html">
-                <button id="PigButton"> 생 성 </button>
-            </a>
-            -->
             <button id="Button_NewList"> 생 성 </button>
         </div>
         </main>
 
         <script type="text/javascript" src="../../JS/detail.js"></script>
 
-        
-        <!-- <script>
-
-            $(function () {
-                $('#period').change(function() {
-                    console.log(this.value);
-                });
-
-                
-                $('#Button_NewList').click(function() {
-                    console.log($('#period').val());
-                    if ($('#period').val() == "") {
-                        alert("입력하세요");
-                        return;
-                    } else {
-                        location.href = "Congratulations.html";
-                    }
-                });
-            });
-
-        </script> -->
     </body>
 </html>
