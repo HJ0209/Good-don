@@ -8,7 +8,7 @@
     </head>  
 
 
-    <body>
+    <div id="menuclick">
 
         <header>
             <h2>굳돈 카테고리 <img src="image/face_logo.png"> </h2>
@@ -36,35 +36,7 @@
             <button>  로그아웃  </button>
         </div>
 
-        <script>
-        $("#limit").click(function(){
-            swal({
-                title: "리미트소비",
-                text: "곧 제공될 서비스입니다.",
-                button: "확인",
-            });
-            });
-
-        $("button").click(function(){
-            swal({
-                title: "로그아웃",
-                text: "로그인 페이지로 이동합니다",
-                buttons: true,
-                dangerMode:true,
-            })
-            .then((Logout)=> {
-                if(Logout) {
-                    swal("로그아웃합니다");
-                    document.location.href="loginpage.html"
-                } else {
-                    swal("로그인을 유지합니다");
-                }
-            })
-        });
-            
-        </script>
-        
         <script type="module" src="../../JS/limit.js"></script>
-    
-    </body>
+        <script type="javascript" src="../../JS/menu.js"></script>
+    </div>
 </html>

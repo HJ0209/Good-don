@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Good-Don page</title>
+        <link rel="stylesheet" href="css/detail_style.css"> 
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
+    </head>
+    
+        
+    <body>
+        <a href="bucket list.html"></a>
+        <main>
+        <header>
+            <h2>상품 정보</h2>
+            <a href = "../login&menu/menu.html">
+                <img class = "menu" src="image/menu.png">
+            </a>
+        </header>
+        <div class="Product_Name">
+            <h1>상품 이름</h1>
+            <input class="name" type="text" value="" placeholder="상품 이름을 입력해주세요!(ex.에어팟, 배낭여행)">
+        </div>
+        <div class="Product_Budget" >
+            <h1>목표 금액</h1>
+
+    <input type="text" id="Budget_Direct" name="Budget_Direct" disabled value = "여기가 초깃값">
+
+            <select id="money" name="money">
+   
+                <option value="">목표 금액을 선택해주세요!</option>
+                <option value="만원">10,000</option>
+                <option value="이만원">20,000</option>
+                <option value="삼만원">30,000</option>
+                <option value="사만원">40,000</option>
+                <option value="오만원">50,000</option>
+                <option value="direct">직접 입력</option>
+
+            </select>
+        </div>
+        <div class="Saving_Period" >
+            <h1>저금 기간</h1>
+
+    <input type="text" id="Period_Direct" name="Period_Direct" disabled value = "여기가 초깃값">
+            <select id="period" name="period" placeholder="저금 기간을 선택해주세요!">
+                <option value="">저금 기간을 선택해주세요!</option>
+                <option value="한달">1개월</option>
+                <option value="두달">2개월</option>
+                <option value="세달">3개월</option>
+                <option value="네달">4개월</option>
+                <option value="direct">직접입력</option>
+            </select>
+        </div>
+        <div class="Payment_Cycle" >
+            <h1>납입 주기</h1>
+   
+    <input type="text" id="Cycle_Direct" name="Cycle_Direct" disabled value = "여기가 초깃값">
+            <select id="cycle" name="cycle">
+                <option value="" selected>납입 주기를 선택해 주세요!</option>
+                <option value="1주일">1주에 한번</option>
+                <option value="2주일">2주에 한번</option>
+                <option value="3주일">3주에 한번</option>
+                <option value="4주일">4주에 한번</option>
+                <option value="direct">직접입력</option>
+            </select>
+        </div>
+        <div>
+            <!--
+            <a href="Congratulations.html">
+                <button id="PigButton"> 생 성 </button>
+            </a>
+            -->
+            <button id="Button_NewList"> 생 성 </button>
+        </div>
+        </main>
+
+        <script type="text/javascript" src="../../JS/detail.js"></script>
+
+        <script type="text/javascript"> 
+   $("#Period_Direct").hide();
+   $('#period').change(function(){ 
+   $("#period option:selected").each(function () { 
+   
+
+   if($(this).val()== 'direct'){ //직접입력일 경우 
+   $("#Period_Direct").show();
+   $("#Period_Direct").val(''); //값 초기화 
+   $("#Period_Direct").attr("disabled",false); //활성화 
+
+   }else{ //직접입력이 아닐경우 
+   $("#Period_Direct").hide();
+   $("#Period_Direct").val($(this).text()); //선택값 입력 
+   $("#Period_Direct").attr("disabled",true); //비활성화 
+   } 
+   }); 
+   }); 
+   </script>
+
+   <script type="text/javascript"> 
+   $("#Cycle_Direct").hide();
+   $('#cycle').change(function(){ 
+   $("#cycle option:selected").each(function () { 
+   
+
+   if($(this).val()== 'direct'){ //직접입력일 경우 
+   $("#Cycle_Direct").show();
+   $("#Cycle_Direct").val(''); //값 초기화 
+   $("#Cycle_Direct").attr("disabled",false); //활성화 
+
+   }else{ //직접입력이 아닐경우 
+   $("#Cycle_Direct").hide();
+   $("#Cycle_Direct").val($(this).text()); //선택값 입력 
+   $("#Cycle_Direct").attr("disabled",true); //비활성화 
+   } 
+   }); 
+   }); 
+   </script>
+
+   <script type="text/javascript"> 
+   $("#Budget_Direct").hide();
+   $('#money').change(function(){ 
+   $("#money option:selected").each(function () { 
+   
+
+   if($(this).val()== 'direct'){ //직접입력일 경우 
+   $("#Budget_Direct").show();
+   $("#Budget_Direct").val(''); //값 초기화 
+   $("#Budget_Direct").attr("disabled",false); //활성화 
+
+   }else{ //직접입력이 아닐경우 
+   $("#Budget_Direct").hide();
+   $("#Budget_Direct").val($(this).text()); //선택값 입력 
+   $("#Budget_Direct").attr("disabled",true); //비활성화 
+   } 
+   }); 
+   }); 
+   </script>
+
+
+        
+        <!-- <script>
+            $(function () {
+                $('#period').change(function() {
+                    console.log(this.value);
+                });
+                
+                $('#Button_NewList').click(function() {
+                    console.log($('#period').val());
+                    if ($('#period').val() == "") {
+                        alert("입력하세요");
+                        return;
+                    } else {
+                        location.href = "Congratulations.html";
+                    }
+                });
+            });
+        </script> -->
+    </body>
+</html>
