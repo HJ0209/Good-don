@@ -4,7 +4,6 @@ main{
     background-color: rgb(238, 251, 255);
     border: 1px solid black;
     margin: 0 auto;
-    margin-top: 5em;
 }
 
 header{
@@ -91,7 +90,7 @@ label{
     border-bottom-right-radius: 25px;
 }
 
-.buttons {
+.budgetbuttons {
     position: relative;
     font-size: 45px;
     width: 160px;
@@ -164,8 +163,21 @@ label{
     color:white;
     border-radius: 25px;
 }
+
+#image-file{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;                
+    width: 1000px;
+    height: 100px; 
+    padding-left:40px;
+    padding-top:60px;
+
+}
+
 #Button_NewList{
-    position: fixed ;
+    position: absolute ;
+    z-index: 0;
     font-size: 50;
     color: white;
     background-color: #006298;
@@ -177,6 +189,7 @@ label{
     margin-left: 450px;
     margin-top: 250px;
 }
+
 
 /* 
 
