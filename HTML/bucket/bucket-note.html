@@ -4,9 +4,10 @@
         <title>BUCKET-NOTE</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/bucket-note_style.css">
-        <link rel="stylesheet" href="css/menu_style.css"> 
+        <link rel="stylesheet" href="../login&menu/css/menu_style.css"> 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link href="css/font_style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -18,18 +19,57 @@
         </header>
         <div class="line1">
             <a href="detail.html">
-                <img id="note" src="image/note.png">
+            <img src="image/note.png" >
             </a>
-            <img id="note" src="image/note.png">
-        </span>
+            <img src="image/note.png">
         </div>
+
         <div class="line2">
-            <img id="note" src="image/note.png">
-            <img id="note" src="image/note.png">
+            <img src="image/note.png">
+            <img src="image/note.png">
         </div>    
     </main>
 
-    <script type="javascript" src="../../JS/menu.js"></script>
+    <div id="menuclick">
+
+        <div id=member>
+            <h2>굳돈 카테고리 <img id="facelogo" src="image/face_logo.png"> </h2>
+            <h3> 굳돈님, 안녕하세요 <br>
+            최근접속일시 : 2020년 6월 20일 09:00:00</h3>
+        </div>
+
+        <div id="menupage">
+            <ul>
+                <a href=../bucket/bucket-note.html>굳돈버킷</a>
+                <li> 버킷조회 </li>
+                <li> 버킷생성 </li>
+                <li> 버킷수정 </li>
+            </ul>
+            <ul id="limit">
+                리미트소비
+            </ul>
+            <ul>
+                마이페이지
+            </ul>
+            <br><br><br><br><br><br><br><br>
+            <hr>
+
+            <li>About GoodDon</li>
+
+            <button>  로그아웃  </button>
+        </div>
+
+        <script type="module" src="../../JS/limit.js"></script>
+    
+    </div>
+
+    <script>
+        $(function(){
+            $.getScript("../../JS/menu.js")
+        })
+    </script>
+    
     </body>
 
 </html>
+

@@ -61,17 +61,13 @@
         <script type="module" src="../../JS/limit.js"></script>
     
     </div>
-    
+
     <script>
-        $(function() {
-            $('#menu').click(function() {
-                $('#menuclick').toggle(200);
-            })
-            });
-        </script>
-
-    <script type="js" src="../../JS/menu.js"></script>
-
+        $(function(){
+            $.getScript("../../JS/menu.js")
+        })
+    </script>
+    
     </body>
 
 </html>
