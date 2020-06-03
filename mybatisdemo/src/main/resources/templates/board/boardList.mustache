@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 목록 조회</title>
+<link rel="stylesheet"
+	href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h2>게시판 목록</h2>
+		<table class="table table-horizontal table-bordered">
+			<thead class="thead-strong">
+				<tr>
+					<th>게시글 번호</th>
+					<th>제목</th>
+					<th>조회수</th>
+					<th>최종수정일</th>
+				</tr>
+
+			</thead>
+			<tbody>
+				{{#resultList}}
+				<tr>
+					<td>{{boardIdx}}</td>
+					<td>{{title}}</td>
+					<td>{{hitCnt}}</td>
+					<td>{{updatedDt}}</td>
+				</tr>
+				{{/resultList}}
+			</tbody>
+		</table>
+		<div>
+			<a class="btn btn-primary" href="/boardWrite.do" role="button">새글</a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstarp.min.js"></script>
+
+</body>
+</html>

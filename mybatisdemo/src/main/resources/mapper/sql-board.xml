@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0/EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mybatisdemo.mapper.BoardMapper">
+	
+	<!-- 게시판 목록 조회 -->
+	<select id = "selectBoardList" resultType="com.example.mybatisdemo.dto.BoardDto">
+	select board_idx title, hit_cnt, creator_id, date_format(created_dt, '%Y.%m.%d %H:%i:%s') as created_dt,
+			updater_id, date_format(updated_dt, '%Y.%m.%d %H:%i:%s') as updated_dt, deleted_yn from board
+			where deleted_yn = 'N'
+			order by board_idx desc
+	
+	</select>
+	
+	<!-- 게시판 저장 -->
+	<insert id="insertBoard" parameterType="com.example.mybatisdemo.dto.BoardDto">
+	insert into board (title,contents, creator_id, created_dt, updater_id, updated_dt) 
+	values(${title}, contents, ${creatorId}, now(), ${creatorId}, now())
+	</insert>
+
+</mapper>
+
