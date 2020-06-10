@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Main Borad</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mainpage_style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ <style>
+#ad{width : 1080px; position : absolute; float:bottom; vertical-align: bottom; bottom:0px; margin-left:auto; top : 1663px;}
+#main {clear:left ; float:left;}
+ul { width: 1080px; }
+li { list-style: none; }
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <header>
+            <a href="mainpage.html">
+                <h1>굳돈</h1>
+            </a>
+            <a href="menu.html">
+                <img id="menu" src="image/menu.png">
+            </a>
+
+        </header>
+
+            <div>
+
+                <img id="search" src="image/search.png">
+
+            </div>
+
+            <div>
+                <a href="../bucket/bucket-note.html">
+                <img id="bucket-note" src="image/note_full.png">
+                </a>
+                <img id="limit" src="image/stop.png">
+            </div>
+
+            <div>
+
+                <a href="../bucket/bucket-note.html">
+                    <h2>굳돈 버킷</h2>
+                </a>
+                <h3>리미트 소비(서비스 준비중)</h3>
+
+            </div>
+            <hr>
+            <div>
+
+                <h5>공지사항</h5>
+                <h6>문의내역</h6>
+
+            </div>
+
+        <script type="text/javascript" src="../../JS/menu.js"></script>
+
+        
+    <div id="ad">
+        <ul class="bxslider">
+            <li><img src="../bucket/image/멀티캠퍼스.png"></li>
+            <li><img src="../bucket/image/4차산업혁명.PNG"></li>
+            <li><img src="http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F9982093A5BEE75FC259992"></li>
+        </ul>
+    </div>
+
+    <script>
+
+
+        $(document).ready(function () {
+          $('.bxslider').bxSlider({
+              auto: true, // 자동으로 애니메이션 시작
+              speed: 500,  // 애니메이션 속도
+              pause: 2000,  // 애니메이션 유지 시간 (1000은 1초)
+              mode: 'horizontal', // 슬라이드 모드 ('fade', 'horizontal', 'vertical' 이 있음)
+              autoControls: false, // 시작 및 중지버튼 보여짐
+              pager: false, // 페이지 표시 보여짐
+              captions: false, // 이미지 위에 텍스트를 넣을 수 있음
+          });
+      });
+      </script>
+
+    </main>
+
+
+    
+
+</body>
+
+
+
+</html>
