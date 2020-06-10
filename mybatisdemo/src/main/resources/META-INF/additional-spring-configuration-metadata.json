@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "spring.mvc",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.mvc'"
+}]}
