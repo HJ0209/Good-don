@@ -1,0 +1,14 @@
+version: "3"                                  # 파일 규격 버전
+services:                                     # 컨테이너 정의
+  db:                                         # 서비스 이름
+    image: mysql:8.0.20                       # 이미지 이름
+    container_name: gooddon_db                  # 컨테이너 이름
+    ports:
+      - "3306:3306"                           # 컨테이너 외부 포트 : 컨테이너 내부 포트
+    environment:                              # 환경 변수
+      MYSQL_ROOT_PASSWORD: "root"             # MYSQL 루트 패스워드
+    command:                                  # 명령어 실행 (한글 깨짐 방지)
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:                                  # 컨테이너 외부 볼륨 : 컨테이너 내부 볼륨
+      - D:/docker/mysql/datadir:/var/lib/mysql 
