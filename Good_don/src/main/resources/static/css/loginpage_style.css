@@ -1,0 +1,46 @@
+main{
+    width: 1080px;
+    height: 1920px;
+    background-color: rgb(238, 251, 255);
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+/* .menu {
+    width:150px;
+    top: 40px;
+    left: 100px;
+    position: relative;
+}   */
+h1{
+    width: 1080px;
+    height: 120px;
+    margin-top: 0em;
+    position: relative;
+    text-align: center;
+    background-color:  #006298;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+.main {
+    width: 900px;
+    height: 200px;
+    margin-top: 5.0em;
+    margin-bottom: 3.0em;
+    margin-left: 1.3em;
+    background-color:rgb(238, 251, 255);
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+.login {
+    width: 900px;
+    height: 120px;
+    margin-top: 0.1em;
+    margin-left: 1.3em;
+    background-color:rgb(238, 251, 255);
+    font-size: 70px;
+    text-align: center;
+    color: white;   
+}

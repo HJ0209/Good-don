@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'배달의민족 주아';
+    src: url(../../../ttf/BMJUA_ttf.ttf) format('truetype');
+}
+
+body {
+    font-family: 배달의민족 주아
+}

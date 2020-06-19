@@ -1,0 +1,124 @@
+main {
+    width: 1080px;
+    height: 1920px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 5em;
+    border: 1px solid black;
+}
+
+h1 {
+    width: 1080px;
+    height: 120px;
+    margin-top: 0em;
+    background-color: #006298;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    width: 795px;
+    height: 180px;
+    color: #006298;
+    background-color: rgb(238, 251, 255);
+    font-size: 50px;
+    text-align: center;
+    margin-top: -80px;
+    bottom: 180px;
+    margin-left: 250px;
+    line-height: 180px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+h3 {
+    width: 795px;
+    height: 180px;
+    color: #006298;
+    background-color: rgb(238, 251, 255);
+    font-size: 50px;
+    text-align: center;
+    margin-left: 250px;
+    line-height: 180px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+hr {
+    border: 3px solid rgb(85, 85, 85);
+    width: 95%;
+    margin-left: 2rem;
+    position: relative;
+    top: 0px;
+}
+
+h5 {
+    width: 1000px;
+    height: 180px;
+    color: white;
+    background-color: rgb(200, 200, 200);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    bottom: 180px;
+    margin-left: 45px;
+    line-height: 180px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+h6 {
+    width: 1000px;
+    height: 180px;
+    color: white;
+    background-color: rgb(200, 200, 200);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    bottom: 180px;
+    margin-left: 45px;
+    line-height: 180px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#menu {
+    width: 130px;
+    height: 80px;
+    position: relative;
+    bottom: 160px;
+}
+
+#search {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 980px;
+    bottom: 230px;
+}
+
+#bucket-note {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 45px;
+    margin-top: -180px;
+    bottom: -100px;
+}
+
+#limit {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -140px;
+    top: 310px;
+}
